@@ -9,5 +9,5 @@ DO NOT DEPLOY IT ANYWHERE YOU CARE ABOUT.
 gradle clean build
 docker-compose build
 docker-compose up
-curl localhost:8080/health
+curl localhost:8080/api/health
 ```
