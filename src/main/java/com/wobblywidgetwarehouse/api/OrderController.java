@@ -12,12 +12,7 @@ import com.wobblywidgetwarehouse.api.Contracts.WidgetOrderRequest;
 @RequestMapping("/order")
 public class OrderController {
 
-	@PostMapping()
-	public String index() {
-		return "Greetings from Spring Boot!";
-	}
-
-	@PostMapping()
+	@PostMapping("/new")
 	public String widgetOrder(@ModelAttribute WidgetOrderRequest request, Model model) {
 		model.addAttribute("request", request);
 
