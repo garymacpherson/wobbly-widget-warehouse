@@ -6,8 +6,6 @@ THIS REPO CONTAINS INTENTIONALLY VULNERABLE CODE FOR THE SAKE OF SECURITY TRAINI
 DO NOT DEPLOY IT ANYWHERE YOU CARE ABOUT.
 
 ```
-gradle clean build
-docker-compose build
-docker-compose up
+make up
 curl localhost:8080/api/health
 ```

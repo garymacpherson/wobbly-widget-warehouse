@@ -11,11 +11,15 @@ import com.wobblywidgetwarehouse.api.Contracts.WidgetOrderRequest;
 @RestController()
 @RequestMapping("/order")
 public class OrderController {
+	@GetMapping("/widget")
+	public String greetingForm(Model model) {
+		model.addAttribute("request", new WidgetOrderRequest());
+		return "widget";
+	}
 
-	@PostMapping("/new")
-	public String widgetOrder(@ModelAttribute WidgetOrderRequest request, Model model) {
+	@PostMapping("/widget")
+	public String greetingSubmit(@ModelAttribute WidgetOrderRequest request, Model model) {
 		model.addAttribute("request", request);
-
-		return "result";
+		return "widget";
 	}
 }
