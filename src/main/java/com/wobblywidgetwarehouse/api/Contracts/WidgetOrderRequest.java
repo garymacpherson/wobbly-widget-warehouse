@@ -1,10 +1,4 @@
-package com.wobblywidgetwarehouse.api.Contracts;
-
-enum WidgetType {
-    SMALL,
-    MEDIUM,
-    LARGE
-}
+package com.wobblywidgetwarehouse.api.contracts;
 
 public class WidgetOrderRequest {
     private WidgetType type;
