@@ -41,3 +41,7 @@ out/
 
 ### Snyk ###
 .dccache
+
+### Exploits ###
+ysoserial-all.jar
+payload
